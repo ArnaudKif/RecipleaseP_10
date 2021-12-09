@@ -16,6 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.24313727020000001" green="0.22745099660000001" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteRecipeCell" id="FKH-PW-xkc">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -175,6 +177,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zfm-lf-MN6"/>
                         <color key="backgroundColor" red="0.24313727020000001" green="0.22745099660000001" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="anF-jN-Yud" firstAttribute="height" secondItem="wMR-Xp-Qlj" secondAttribute="height" id="0Hw-si-d4B"/>
                             <constraint firstItem="anF-jN-Yud" firstAttribute="width" secondItem="wMR-Xp-Qlj" secondAttribute="width" id="3Is-Dx-Xsv"/>
@@ -228,6 +231,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.24313727020000001" green="0.22745099660000001" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
@@ -258,6 +262,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.24313727020000001" green="0.22745099660000001" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.24313727020000001" green="0.22745099660000001" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
@@ -379,6 +384,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qag-iS-WHQ"/>
                         <color key="backgroundColor" red="0.24313727020000001" green="0.22745099660000001" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Mcs-3w-3Vl" firstAttribute="centerX" secondItem="tA9-yP-cbd" secondAttribute="centerX" id="1H5-zv-GDf"/>
                             <constraint firstItem="AiF-uJ-31B" firstAttribute="height" secondItem="nst-CO-Q5D" secondAttribute="height" id="451-8w-vWG"/>
@@ -427,6 +433,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.24313727020000001" green="0.22745099660000001" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" id="Mst-JM-EMw">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -485,7 +492,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3o2-Qa-yh5"/>
+        <segue reference="rpw-2u-9F1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="clock.badge.checkmark.fill" catalog="system" width="128" height="113"/>
