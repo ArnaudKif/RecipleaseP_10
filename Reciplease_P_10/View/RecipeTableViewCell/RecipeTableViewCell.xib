@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeTableViewCell" rowHeight="156" id="KGk-i7-Jjw" customClass="RecipeTableViewCell" customModule="Reciplease_P_10" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="156"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="156"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCz-SC-IlM">
+                        <rect key="frame" x="16" y="125" width="284" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="dEF-6l-CBg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
+                        <color key="textColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoRecette" translatesAutoresizingMaskIntoConstraints="NO" id="Cn0-br-a0C">
+                        <rect key="frame" x="0.0" y="0.0" width="316" height="123"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLf-Hn-pMP">
+                        <rect key="frame" x="251" y="5" width="60" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJZ-xN-aMc">
+                                <rect key="frame" x="0.0" y="20" width="40" height="20"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4tf-8L-xMn"/>
+                                    <constraint firstAttribute="height" constant="20" id="P4G-ov-GgP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nam-cq-cKW">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="VEB-SS-A4g"/>
+                                    <constraint firstAttribute="width" constant="40" id="VZC-ci-291"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xBL-ai-UMV">
+                                <rect key="frame" x="40" y="0.5" width="20" height="17.5"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2JB-7t-24b"/>
+                                    <constraint firstAttribute="width" constant="20" id="r7t-TZ-a7w"/>
+                                </constraints>
+                                <imageReference key="image" image="fork.knife" catalog="system" symbolScale="small"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tjl-DP-hpx">
+                                <rect key="frame" x="40" y="23.5" width="19.5" height="14.5"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="2uC-HO-LdG"/>
+                                    <constraint firstAttribute="height" constant="19" id="laj-m1-KMd"/>
+                                </constraints>
+                                <imageReference key="image" image="clock.badge.checkmark" catalog="system" symbolScale="small"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tjl-DP-hpx" firstAttribute="leading" secondItem="yJZ-xN-aMc" secondAttribute="trailing" id="6g9-5l-Rs8"/>
+                            <constraint firstItem="xBL-ai-UMV" firstAttribute="top" secondItem="pLf-Hn-pMP" secondAttribute="top" id="BL9-fy-N5E"/>
+                            <constraint firstAttribute="bottom" secondItem="tjl-DP-hpx" secondAttribute="bottom" id="GbC-At-5h5"/>
+                            <constraint firstItem="yJZ-xN-aMc" firstAttribute="top" secondItem="Nam-cq-cKW" secondAttribute="bottom" id="Ibs-6N-0M5"/>
+                            <constraint firstItem="xBL-ai-UMV" firstAttribute="leading" secondItem="Nam-cq-cKW" secondAttribute="trailing" id="MRN-d7-cWw"/>
+                            <constraint firstItem="Nam-cq-cKW" firstAttribute="leading" secondItem="pLf-Hn-pMP" secondAttribute="leading" id="MS7-dY-I4H"/>
+                            <constraint firstItem="Nam-cq-cKW" firstAttribute="top" secondItem="pLf-Hn-pMP" secondAttribute="top" id="O0r-7p-KVo"/>
+                            <constraint firstAttribute="height" constant="40" id="ODu-GJ-RbM"/>
+                            <constraint firstAttribute="trailing" secondItem="xBL-ai-UMV" secondAttribute="trailing" id="PqV-e9-gyE"/>
+                            <constraint firstAttribute="width" constant="60" id="UOV-Gm-yz0"/>
+                            <constraint firstItem="yJZ-xN-aMc" firstAttribute="leading" secondItem="pLf-Hn-pMP" secondAttribute="leading" id="YNo-Oy-ygF"/>
+                            <constraint firstItem="yJZ-xN-aMc" firstAttribute="top" secondItem="Nam-cq-cKW" secondAttribute="bottom" id="Z30-UZ-xPZ"/>
+                            <constraint firstAttribute="bottom" secondItem="yJZ-xN-aMc" secondAttribute="bottom" id="fKs-xm-8Y4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="rCz-SC-IlM" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="0Po-5A-vp2"/>
+                    <constraint firstItem="rCz-SC-IlM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2rW-67-LWE"/>
+                    <constraint firstItem="Cn0-br-a0C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9c8-7r-Q0O"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rCz-SC-IlM" secondAttribute="trailing" id="Chd-eK-cdB"/>
+                    <constraint firstItem="Cn0-br-a0C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GEt-EV-0ZG"/>
+                    <constraint firstAttribute="trailing" secondItem="pLf-Hn-pMP" secondAttribute="trailing" constant="5" id="ZKu-h9-8Te"/>
+                    <constraint firstAttribute="trailing" secondItem="Cn0-br-a0C" secondAttribute="trailing" id="pNh-zy-DY4"/>
+                    <constraint firstItem="pLf-Hn-pMP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="sjU-ax-oZR"/>
+                    <constraint firstItem="rCz-SC-IlM" firstAttribute="top" secondItem="Cn0-br-a0C" secondAttribute="bottom" constant="2" id="suK-2e-byv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="recipeCookingTime" destination="yJZ-xN-aMc" id="6Na-Ze-hRX"/>
+                <outlet property="recipeImageView" destination="Cn0-br-a0C" id="Wjn-KN-40p"/>
+                <outlet property="recipeLikeLabel" destination="Nam-cq-cKW" id="UBt-e8-b26"/>
+                <outlet property="recipeTitle" destination="rCz-SC-IlM" id="Zk7-VJ-lp6"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="141.29464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock.badge.checkmark" catalog="system" width="128" height="113"/>
+        <image name="fork.knife" catalog="system" width="92" height="128"/>
+        <image name="photoRecette" width="150" height="150"/>
+    </resources>
+</document>
