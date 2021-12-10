@@ -22,6 +22,9 @@ Reciplease relies on Edamam's API which offers a search engine to find recipes. 
 -- WARNING -- for the project to work, you must add your own API access keys in the following constants:
 
 let apiKey = "YourApiKey"
+
 let appId = "YourAppId"
+
+
 
 
