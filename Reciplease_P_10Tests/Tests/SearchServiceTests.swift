@@ -18,7 +18,7 @@ class SearchServiceTest: XCTestCase {
         XCTAssertEqual(s1.ingredientListForResquest, egg.capitalized)
         let cream = "cream"
         s1.addIngredient(ingredient: cream)
-        XCTAssertEqual(s1.ingredientListForResquest, "\(egg.capitalized) \(cream.capitalized)")
+        XCTAssertEqual(s1.ingredientListForResquest, "\(egg.capitalized),\(cream.capitalized)")
         s1.clearIngredients()
         XCTAssertEqual(s1.ingredientListForResquest, "")
 

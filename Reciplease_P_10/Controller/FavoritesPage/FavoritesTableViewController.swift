@@ -57,7 +57,7 @@ extension FavoritesTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeTableViewCell", for: indexPath) as! RecipeTableViewCell
         // cell configuration
-        cell.commonInit(with: favorites[indexPath.row].image, title: favorites[indexPath.row].label, cookingTime: "\(favorites[indexPath.row].totalTime)", like: "\(favorites[indexPath.row].yield)")
+        cell.commonInit(with: favorites[indexPath.row].image, title: favorites[indexPath.row].label, cookingTime: intTimeToString(time: favorites[indexPath.row].totalTime), like: "\(favorites[indexPath.row].yield)")
         return cell
     }
 

@@ -14,6 +14,7 @@ class RecipesTableViewController: UITableViewController {
     var afRequest = AlamoRequest.alamoRequest
     var recipe: Recipe?
     var hit: [Hits]?
+    var dataIsLoaded: Bool = false
 
     // MARK: - IBOutlets
     @IBOutlet var recipeTableView: UITableView!
@@ -22,12 +23,14 @@ class RecipesTableViewController: UITableViewController {
     // MARK: - View Loading
     override func viewDidLoad() {
         super.viewDidLoad()
+        switchIndicatorState(inState: false)
+        timerDataIsCharged()
         NotificationCenter.default.addObserver(self, selector: #selector(recipeLoaded(notification:)), name: AlamoRequest.notificationRecipeLoaded, object: nil)
         recipeTableView.delegate = self
         recipeTableView.dataSource = self
         let nibName = UINib(nibName: "RecipeTableViewCell", bundle: nil)
         recipeTableView.register(nibName, forCellReuseIdentifier: "RecipeTableViewCell")
-        activityIndicator.isHidden = false
+
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -42,12 +45,29 @@ class RecipesTableViewController: UITableViewController {
         recipeTableView.reloadData()
         if let recipeCount = afRequest.recipe?.hits {
             hit = recipeCount
-            if recipeCount.count == 0 {
-                createAlert(message: "No recipe found with these ingredients")
-            }
         }
-        activityIndicator.isHidden = true
+        switchIndicatorState(inState: true)
     }
+
+    // This timer check if data is loaded and stop the activityIndicator
+    func timerDataIsCharged() {
+        Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { (_) in
+            self.recipeTableView.reloadData()
+            if !self.dataIsLoaded {
+                print("No recipe")
+                self.createAlert(message: "No recipe found with these ingredients")
+            }
+            print("End of timer")
+            self.switchIndicatorState(inState: true)
+        }
+    }
+
+    // Change State of activityIndicator and dataIsLoaded
+    func switchIndicatorState(inState : Bool) {
+        activityIndicator.isHidden = inState
+        dataIsLoaded = inState
+    }
+
 }
 
 // MARK: - Extension : TableView Configuration
@@ -64,7 +84,7 @@ extension RecipesTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeTableViewCell", for: indexPath) as! RecipeTableViewCell
         if hit!.count > 1 {
             // cell configuration with recipe
-            cell.commonInit(with: hit![indexPath.row].recipe.image, title: hit![indexPath.row].recipe.label, cookingTime: "\(hit![indexPath.row].recipe.totalTime)", like: "\(hit![indexPath.row].recipe.yield)")
+            cell.commonInit(with: hit![indexPath.row].recipe.image, title: hit![indexPath.row].recipe.label, cookingTime: intTimeToString(time: hit![indexPath.row].recipe.totalTime), like: "\(hit![indexPath.row].recipe.yield)")
             return cell
         } else {
             // cell configuration without recipe

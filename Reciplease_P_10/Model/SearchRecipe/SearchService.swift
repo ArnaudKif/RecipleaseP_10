@@ -20,7 +20,7 @@ class SearchService {
 
     // List of ingredients for the request
     var ingredientListForResquest: String {
-        ingredientList.joined(separator:" ")
+        ingredientList.joined(separator:",")
     }
 
     // MARK: - Methods

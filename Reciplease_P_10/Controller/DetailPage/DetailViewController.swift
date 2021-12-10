@@ -53,7 +53,7 @@ class DetailViewController: UIViewController {
     // updates the recipe display and load the photo
     func recipeDisplayUpdate() {
         if recipe != nil {
-            timeLabel.text = "\(recipe!.totalTime)"
+            timeLabel.text = intTimeToString(time: recipe!.totalTime)
             likeLabel.text = "\(recipe!.yield)"
             recipeTitleLabel.text = recipe!.label
             guard let url = URL(string: recipe!.image) else {
