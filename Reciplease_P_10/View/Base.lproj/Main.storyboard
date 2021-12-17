@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -223,7 +222,7 @@
         <!--Navigation Controller-->
         <scene sceneID="3gJ-3f-XQk">
             <objects>
-                <navigationController id="uJu-lj-hRp" sceneMemberID="viewController">
+                <navigationController interfaceStyle="dark" id="uJu-lj-hRp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" selectedImage="star" catalog="system" systemItem="favorites" id="Csm-tc-1kX">
                         <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
@@ -256,7 +255,7 @@
             <objects>
                 <navigationController id="M7i-wB-3t3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" selectedImage="magnifyingglass" catalog="system" systemItem="search" id="fOQ-RF-g25">
-                        <color key="badgeColor" red="0.24313727020000001" green="0.22745099660000001" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RtX-I9-cED">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -295,7 +294,8 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yj-UQ-avZ">
                                 <rect key="frame" x="0.0" y="88" width="414" height="127"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.97647058959999999" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's in your fridge ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mcs-3w-3Vl">
                                 <rect key="frame" x="77.5" y="93" width="259" height="40"/>
@@ -303,7 +303,7 @@
                                     <constraint firstAttribute="height" constant="40" id="usb-4I-MQe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.24313727020000001" green="0.22745099660000001" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lemon, Cheese, Sausages..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVf-qa-f3S">
@@ -501,8 +501,5 @@
         <image name="photoRecette" width="150" height="150"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

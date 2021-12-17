@@ -12,6 +12,7 @@ class FavoritesTableViewController: UITableViewController {
     // MARK: - Properties
     var recipe: Recipe?
     var favorites: [Recipe] = []
+    let favManagement = FavoritesDataManagement.favoritesDataManagement
 
     // MARK: - IBOutlets
     @IBOutlet var favoritesTableView: UITableView!
@@ -27,7 +28,7 @@ class FavoritesTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         completeFavoriteArray()
         favoritesTableView.reloadData()
-        if FavoritesRecipesData.all.isEmpty{
+        if favManagement.all.isEmpty {
             createAlert(message: "First, add Favorites Recipes on the search menu")
         }
     }
@@ -35,7 +36,7 @@ class FavoritesTableViewController: UITableViewController {
     // MARK: - Methods
     func completeFavoriteArray() {
         favorites.removeAll()
-        for recipe in FavoritesRecipesData.all {
+        for recipe in favManagement.all {
             let recipeToAppend = Recipe(uri: "-", label: recipe.label!, image: recipe.image!, source: "-", url: recipe.url!, shareAs: "-", yield: recipe.yield, dietLabels: [], healthLabels: [], ingredientLines: recipe.ingredientLines!.components(separatedBy: ","), ingredients: [], calories: 0.0, totalWeight: 0.0, totalTime: Int(recipe.totalTime), totalNutrients: [:], totalDaily: [:])
             favorites.append(recipeToAppend)
         }
@@ -70,7 +71,7 @@ extension FavoritesTableViewController {
     // Delete a recipe from the favorites via the context menu or by swipe the cell
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            FavoritesDataManagement.favoritesDataManagement.removeRecipe(recipeToRemove: favorites[indexPath.row])
+            favManagement.removeRecipe(recipeToRemove: favorites[indexPath.row])
             favorites.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
