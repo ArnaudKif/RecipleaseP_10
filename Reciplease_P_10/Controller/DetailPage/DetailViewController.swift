@@ -111,9 +111,6 @@ class DetailViewController: UIViewController {
     // Check if the recipe is in favorites
     func isInFavorites() -> Bool {
         return favManagement.isInFavorite(recipeUrl: recipe!.url)
-//        if (favManagement.all.firstIndex(where: { $0.label == recipe?.label }) != nil) {
-//            return true
-//        } else { return false }
     }
 }
 

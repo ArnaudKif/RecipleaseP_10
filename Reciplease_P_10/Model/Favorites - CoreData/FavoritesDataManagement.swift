@@ -12,8 +12,7 @@ class FavoritesDataManagement {
     // MARK: - pattern Singleton
     public static let favoritesDataManagement = FavoritesDataManagement(context: AppDelegate.viewContext)
 
-
-//    let appDelegateContext: NSManagedObjectContext = AppDelegate.viewContext
+    // MARK: - Properties
     let favContext: NSManagedObjectContext
 
     public init(context:NSManagedObjectContext) {
