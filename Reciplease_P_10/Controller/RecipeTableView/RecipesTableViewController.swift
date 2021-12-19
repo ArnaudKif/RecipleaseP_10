@@ -51,7 +51,7 @@ class RecipesTableViewController: UITableViewController {
 
     // This timer check if data is loaded and stop the activityIndicator
     func timerDataIsCharged() {
-        Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { (_) in
+        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { (_) in
             self.recipeTableView.reloadData()
             if !self.dataIsLoaded {
                 print("No recipe")

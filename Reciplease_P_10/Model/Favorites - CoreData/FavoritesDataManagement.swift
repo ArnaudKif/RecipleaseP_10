@@ -46,7 +46,7 @@ class FavoritesDataManagement {
             }
         }
         // Save the context
-        try? AppDelegate.viewContext.save()
+        try? favContext.save()
     }
 
     // Return all favorites recipes from CoreData in an array
