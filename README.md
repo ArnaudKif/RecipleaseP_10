@@ -2,16 +2,15 @@
 
 This project is part of course #10 of the OpenClassRooms formation iOS Developer.
 
-It focuses on two important elements:
+It focuses on important elements:
 
-Using an open source library
-Managing a Table View
-Using the delegate pattern
-Save data with Core Data
+- Using an open source library
+- Managing a Table View
+- Using the delegate pattern
+- Save data with Core Data
 
 Description of the application:
 
-General description
 Reciplease allows you to search for recipes based on ingredients. 
 You can also save your favorite recipes as favorites.
 The application is divided into two parts: the search and the favorites. 
