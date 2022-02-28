@@ -24,7 +24,7 @@ let appId = "YourAppId"
 
 <img width="934" alt="Capture d’écran 2021-12-10 à 13 30 25" src="https://user-images.githubusercontent.com/78606895/146671500-7d7a7fe6-11ed-4df3-be84-5a222539a9ba.png">
 
-English traduction : 
+-------------
 
 This project is part of course #10 of the OpenClassRooms formation iOS Developer.
 
